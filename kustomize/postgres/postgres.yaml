@@ -27,3 +27,6 @@ spec:
         #     resources:
         #       requests:
         #         storage: 1Gi
+  patroni:
+    dynamicConfiguration:
+      failsafe_mode: true
