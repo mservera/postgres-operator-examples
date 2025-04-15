@@ -5,25 +5,25 @@ metadata:
 spec:
   postgresVersion: 17
   users:
-    - name: rhino
-      databases:
-        - zoo
+    # - name: rhino
+    #   databases:
+    #     - zoo
   instances:
     - name: instance1
-      dataVolumeClaimSpec:
-        accessModes:
-        - "ReadWriteOnce"
-        resources:
-          requests:
-            storage: 1Gi
+      # dataVolumeClaimSpec:
+      #   accessModes:
+      #   - "ReadWriteOnce"
+        # resources:
+        #   requests:
+        #     storage: 1Gi
   backups:
     pgbackrest:
       repos:
       - name: repo1
-        volume:
-          volumeClaimSpec:
-            accessModes:
-            - "ReadWriteOnce"
-            resources:
-              requests:
-                storage: 1Gi
+        # volume:
+        #   volumeClaimSpec:
+        #     accessModes:
+        #     - "ReadWriteOnce"
+        #     resources:
+        #       requests:
+        #         storage: 1Gi
